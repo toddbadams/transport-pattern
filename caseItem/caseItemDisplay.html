@@ -1,0 +1,15 @@
+<section ng-show="vm.caseItem" class="column">
+    <header>
+        <span>CaseItem &mdash; {{vm.caseItem.id}}</span>
+        <span>Case Type &mdash; {{vm.caseItem.title}}</span>
+        <span>Parent &mdash;  {{vm.caseItem.parentId}}</span>
+    </header>
+    <div class="column">
+            <alert-display ng-if="vm.isAlert()" case-item="vm.caseItem" class="column"></alert-display>
+    </div>
+    <footer class="row fixed">
+            <button ng-show="vm.canOpen()" ng-click="vm.open()">open case</button>
+            <button ng-show="vm.canResolve()" ng-click="vm.resolve()">mark resolved</button>
+            <alert-actions ng-if="vm.isAlert()" case-item="vm"></alert-actions>
+    </footer>
+</section>

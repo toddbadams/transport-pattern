@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en"  ng-app="t">
+<head>
+  <meta charset="utf-8">
+  <title>An inverse inheritence model</title>
+  <meta name="author" content="Todd B. Adams">
+  <link rel="stylesheet" type="text/css" href="reset.css" />
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <link rel="stylesheet" type="text/css" href="caseItem/caseItem.css" />
+  <link rel="stylesheet" type="text/css" href="caseItem/alert/alert.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+</head>
+
+<body class="column">    
+  <case-item-page class="row"></case-item-page>
+  <script src="caseItem/alert/alertDataService.js"></script>
+  <script src="caseItem/alert/alertDisplay.js"></script>
+  <script src="caseItem/alert/alertActions.js"></script>
+  <script src="caseItem/alert/alertStatusType.js"></script>
+  <script src="caseItem/alert/alertType.js"></script>
+  <script src="caseItem/alert/alert.js"></script>
+    
+  <script src="caseItem/caseItemDataService.js"></script>
+  <script src="caseItem/caseItemDisplay.js"></script>
+  <script src="caseItem/caseItemMenu.js"></script>
+  <script src="caseItem/caseItemMenuItem.js"></script>
+  <script src="caseItem/caseItemType.js"></script>
+  <script src="caseItem/caseItemPage.js"></script>
+  <script src="caseItem/caseItem.js"></script>
+  
+  <script>
+      angular.module('t',['t.caseItem']);
+  </script>
+</body>
+</html>

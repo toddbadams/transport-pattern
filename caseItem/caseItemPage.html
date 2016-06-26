@@ -1,0 +1,3 @@
+<case-item-menu case-items="vm.caseItems" on-select="vm.select(caseItem)" class="colum"></case-item-menu>
+<case-item-display case-item="vm.selectedCaseItem" class="column" ng-show="vm.selectedCaseItem"></case-item-display>
+<div class="column empty" ng-show="!vm.selectedCaseItem">Select a case item!</>

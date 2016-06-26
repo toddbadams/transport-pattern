@@ -1,0 +1,7 @@
+<header>Case Items</header>
+<ul>
+    <li class="heading">Alerts</li>
+    <li ng-repeat="caseItem in vm.caseItems">
+        <case-item-menu-item case-item="caseItem" ng-click="vm.onClick(caseItem)"></case-item-menu-item>
+    </li>
+</ul>
